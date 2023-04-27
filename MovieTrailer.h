@@ -8,7 +8,7 @@ public:
 	int trailerViews;
 
 	//display function:
-	void displayTrailer() {
+	void DisplayTrailer() {
 		std::cout << "Trailer lenght: " << trailerLenght << std::endl;
 		std::cout << "Trailer views: " << trailerViews << std::endl;
 	}
