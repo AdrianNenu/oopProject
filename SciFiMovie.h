@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "movie.h"
-#include "trailer.h"
+#include "Movie.h"
+#include "MovieTrailer.h"
 
 class SciFiMovie: public Movie {
 public:
