@@ -64,7 +64,7 @@ public:
 
 
     //display function
-    void display() {
+    void Display() {
         std::cout << "Name of movie: " << name << std::endl;
         std::cout << "lenght: " << lenght << std::endl;
         std::cout << "year :" << year << std::endl;
