@@ -21,7 +21,6 @@ public:
         SetGetObject.setName("2001: A Space Oddysey");
         cout << SetGetObject.getName() << endl;
 
-
         Movie MovieClassObject;
         //constructors for the class "Movie":
         Movie InceptionMovie{ "Inception", 148, 2010, 24.99, 150 };
@@ -44,13 +43,11 @@ public:
 
         //Calling the method from MovieTrailer class through the ActionMovie class, using inheritance and composition:
         ActionMovieObject.ActionMovieMethod();
-
     }
 };
 
 int main() {
     //creating an Object of the class Main, and calling the main function:
-    Main MainObject;
-    MainObject.main();
-
+    Main mainObject;
+    mainObject.main();
 }
