@@ -27,5 +27,4 @@ public:
 
 	//destructor:
 	~SciFiMovie() {}
-
 };
