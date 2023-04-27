@@ -21,10 +21,10 @@ public:
     int screeningDate;
 
     //setters and getters:
-    void SetName(std::string s) {
+    void setName(std::string s) {
         name = s;
     }
-    std::string GetName() {
+    std::string getName() {
         return name;
     }
 
