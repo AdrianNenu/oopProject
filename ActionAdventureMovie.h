@@ -8,7 +8,7 @@ class ActionAdventureMovie: public ActionMovie {
 public:
 	std::string franchise;
 	std::string awards;
-	void display() {
+	void Display() {
 		std::cout << "Action-Adventure Movie class called." << std::endl;
 		std::cout << "Movie franchise: " << franchise << std::endl;
 		std::cout << "Awards recieved: " << awards << '\n' << std::endl;
