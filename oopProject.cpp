@@ -19,8 +19,8 @@ public:
     {
         //using set and get methods:
         Movie SetGetObject;
-        SetGetObject.SetName("2001: A Space Oddysey");
-        cout << SetGetObject.GetName() << endl;
+        SetGetObject.setName("2001: A Space Oddysey");
+        cout << SetGetObject.getName() << endl;
 
 
         Movie MovieClassObject;
