@@ -5,6 +5,9 @@
 #include "MovieTrailer.h"
 
 class ActionMovie: public Movie {
+protected:
+	std::string studio;
+	
 public:
 	int budget;
 	int boxOffice;
@@ -33,8 +36,4 @@ public:
 
 	//destructor:
 	virtual ~ActionMovie() {};
-
-
-protected:
-	std::string studio;
 };
