@@ -11,7 +11,6 @@ using namespace std;
 //static attribute initialization:
 int Movie::objectCount = 0;
 
-
 class Main
 {
 public:
