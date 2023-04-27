@@ -48,6 +48,6 @@ public:
 
 int main() {
     //creating an Object of the class Main, and calling the main function:
-    Main mainObject;
-    mainObject.main();
+    Main myProject;
+    myProject.main();
 }
