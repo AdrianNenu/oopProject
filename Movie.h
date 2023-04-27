@@ -33,8 +33,9 @@ public:
 
 
     //Default constructor
-    Movie();
-
+    Movie(){
+        objectCount++;
+    }
 
     // Constructor that uses 5 parameters
     Movie(std::string movie_name, int movie_lenght, int movie_year, double movie_price, int movie_freeSeats) : name{ "Null" }, lenght{ 0 }, year{ 0 }, price{ 0 }, freeSeats{ 0 } {
