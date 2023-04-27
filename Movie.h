@@ -2,10 +2,11 @@
 #include <iostream>
 #include <string>
 #include "MovieTrailer.h"
+using namespace std;
 
 class Movie {
 private:
-    std::string name;
+    string name;
     int lenght;
     int year;
     double price;
@@ -21,10 +22,10 @@ public:
     int screeningDate;
 
     //setters and getters:
-    void setName(std::string s) {
+    void setName(string s) {
         name = s;
     }
-    std::string getName() {
+    string getName() {
         return name;
     }
 
@@ -38,7 +39,8 @@ public:
     }
 
     // Constructor that uses 5 parameters
-    Movie(std::string movie_name, int movie_lenght, int movie_year, double movie_price, int movie_freeSeats) : name{ "Null" }, lenght{ 0 }, year{ 0 }, price{ 0 }, freeSeats{ 0 } {
+    Movie(string movie_name, int movie_lenght, int movie_year, double movie_price, int movie_freeSeats) :
+    name{ "Null" }, lenght{ 0 }, year{ 0 }, price{ 0 }, freeSeats{ 0 } {
         name = movie_name;
         lenght = movie_lenght;
         year = movie_year;
@@ -49,8 +51,8 @@ public:
         objectCount++;
     }
     //constructor that uses 3 parameters, delegation, and the pointer this:
-    Movie(std::string movie_name, int movie_lenght, int year) : Movie() {
-        std::cout << "constructor cu 3 parametrii: " << std::endl;
+    Movie(string movie_name, int movie_lenght, int year) : Movie() {
+        cout << "constructor cu 3 parametrii: " << endl;
         name = movie_name;
         lenght = movie_lenght;
         this->year = year;
@@ -65,15 +67,15 @@ public:
 
     //display function
     void Display() {
-        std::cout << "Name of movie: " << name << std::endl;
-        std::cout << "lenght: " << lenght << std::endl;
-        std::cout << "year :" << year << std::endl;
-        std::cout << "price: " << price << std::endl;
-        std::cout << "number of free seats: " << freeSeats << std::endl << std::endl;
+        cout << "Name of movie: " << name << endl;
+        cout << "lenght: " << lenght << endl;
+        cout << "year :" << year << endl;
+        cout << "price: " << price << endl;
+        cout << "number of free seats: " << freeSeats << endl << endl;
     }
 
     //destructor:
     ~Movie() {
-        std::cout << "apelarea destructorului de catre: " << name << std::endl;
+        cout << "apelarea destructorului de catre: " << name << endl;
     }
 };
