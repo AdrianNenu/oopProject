@@ -12,7 +12,7 @@ public:
 	int budget;
 	int boxOffice;
 
-	void display() {
+	void Display() {
 		std::cout << "Action Movie class called:" << std::endl;
 		std::cout << "Movie budget: " << budget << std::endl;
 		std::cout << "Movie box office " << boxOffice << std::endl;
