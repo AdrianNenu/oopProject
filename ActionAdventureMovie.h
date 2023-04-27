@@ -3,22 +3,23 @@
 #include <string>
 #include "ActionMovie.h"
 #include "MovieTrailer.h"
+using namespace std;
 
 class ActionAdventureMovie: public ActionMovie {
 public:
-	std::string franchise;
-	std::string awards;
+	string franchise;
+	string awards;
 	void Display() {
-		std::cout << "Action-Adventure Movie class called." << std::endl;
-		std::cout << "Movie franchise: " << franchise << std::endl;
-		std::cout << "Awards recieved: " << awards << '\n' << std::endl;
+		cout << "Action-Adventure Movie class called." << endl;
+		cout << "Movie franchise: " << franchise << endl;
+		cout << "Awards recieved: " << awards << '\n' << endl;
 	}
 
 	//default constructor:
 	ActionAdventureMovie();
 
 	//constructor with 2 parameters:
-	ActionAdventureMovie(std::string movieFranchise, std::string movieAwards) {
+	ActionAdventureMovie(string movieFranchise, string movieAwards) {
 		franchise = movieFranchise;
 		awards = movieAwards;
 
