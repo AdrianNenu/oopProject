@@ -1,11 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "movie.h"
-#include "actionmovie.h"
-#include "trailer.h"
-#include "scifi.h"
-#include "actadvmovie.h"
+#include "Movie.h"
+#include "ActionMovie.h"
+#include "MovieTrailer.h"
+#include "SciFi.h"
+#include "ActionAdventureMovie.h"
 using namespace std;
 
 //static attribute initialization:
