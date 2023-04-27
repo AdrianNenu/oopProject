@@ -17,32 +17,33 @@ public:
     void main()
     {
         //using set and get methods:
-        Movie SetGetObject;
+        Movie setGetObject;
         SetGetObject.setName("2001: A Space Oddysey");
-        cout << SetGetObject.getName() << endl;
+        cout << setGetObject.getName() << endl;
 
-        Movie MovieClassObject;
+        Movie movieClassObject;
         //constructors for the class "Movie":
-        Movie InceptionMovie{ "Inception", 148, 2010, 24.99, 150 };
-        InceptionMovie.display();
+        Movie inceptionMovie{ "Inception", 148, 2010, 24.99, 150 };
+        inceptionMovie.Display();
 
-        Movie TheDarkKnightObject("The Dark Knight", 152, 2008);
-        TheDarkKnightObject.display();
+        Movie theDarkKnightObject("The Dark Knight", 152, 2008);
+        theDarkKnightObject.Display();
 
         //Display the static attribute:
         cout << "Total objects: " << Movie::objectCount << '\n' << '\n';
 
         //Constructors and displaying for the other classes:
-        ActionMovie ActionMovieObject{ 1000000, 3500000, "20th Century Fox" };
-        ActionMovieObject.display();
-        SciFiMovie SciFiMovieObject{ "Stanley Kubrik", "English" };
-        SciFiMovieObject.display();
-        ActionAdventureMovie ActionAdventureObject{ "Indiana Jones", "Best visual" };
-        ActionAdventureObject.display();
-        MovieTrailer MovieTrailerObject;
+        ActionMovie actionMovieObject{ 1000000, 3500000, "20th Century Fox" };
+        actionMovieObject.Display();
+        SciFiMovie sciFiMovieObject{ "Stanley Kubrik", "English" };
+        sciFiMovieObject.Display();
+        ActionAdventureMovie actionAdventureObject{ "Indiana Jones", "Best visual" };
+        actionAdventureObject.Display();
+        MovieTrailer movieTrailerObject;
+        movieTrailerObject.DisplayTrailer();
 
         //Calling the method from MovieTrailer class through the ActionMovie class, using inheritance and composition:
-        ActionMovieObject.ActionMovieMethod();
+        actionMovieObject.ActionMovieMethod();
     }
 };
 
