@@ -3,24 +3,25 @@
 #include <string>
 #include "Movie.h"
 #include "MovieTrailer.h"
+using namespace std;
 
 class SciFiMovie: public Movie {
 public:
-	std::string director;
-	std::string language;
+	string director;
+	string language;
 
 	//display function:
 	void Display() {
-		std::cout << "Sci-Fi class called:" << std::endl;
-		std::cout << "Movie director: " << director << std::endl;
-		std::cout << "Movie language: " << language << '\n' << std::endl;
+		cout << "Sci-Fi class called:" << endl;
+		cout << "Movie director: " << director << endl;
+		cout << "Movie language: " << language << '\n' << endl;
 	}
 
 	//default constructor:
 	SciFiMovie();
 
 	//constructor with 2 parameters:
-	SciFiMovie(std::string movieDirector, std::string movieLanguage) {
+	SciFiMovie(string movieDirector, string movieLanguage) {
 		director = movieDirector;
 		language = movieLanguage;
 	}
