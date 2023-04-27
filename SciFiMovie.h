@@ -10,7 +10,7 @@ public:
 	std::string language;
 
 	//display function:
-	void display() {
+	void Display() {
 		std::cout << "Sci-Fi class called:" << std::endl;
 		std::cout << "Movie director: " << director << std::endl;
 		std::cout << "Movie language: " << language << '\n' << std::endl;
