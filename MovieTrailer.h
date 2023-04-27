@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+using namespace std;
 
 class MovieTrailer {
 public:
@@ -9,13 +10,13 @@ public:
 
 	//display function:
 	void DisplayTrailer() {
-		std::cout << "Trailer lenght: " << trailerLenght << std::endl;
-		std::cout << "Trailer views: " << trailerViews << std::endl;
+		cout << "Trailer lenght: " << trailerLenght << endl;
+		cout << "Trailer views: " << trailerViews << endl;
 	}
 
 	//method that gets passed down to the other classes:
 	static void MovieTrailerMethod() {
-		std::cout << "Method called in the movieTrailer class " << std::endl;
+		cout << "Method called in the movieTrailer class " << endl;
 	}
 
 	//destructor:
